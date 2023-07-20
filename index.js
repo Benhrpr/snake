@@ -7,6 +7,7 @@ const gameHeight = gameBoard.height;
 const boardBackground = "white";
 const snakeColor = "orange";
 const snakeBorder = "black";
+const foodBorder = "black";
 const foodColor = "blue";
 const unitSize = 25;
 let running = false;
@@ -63,6 +64,7 @@ function createFood(){
     foodY = randomFood(0, gameWidth - unitSize);
 };
 function drawFood(){
+    ctx.strokeStyle = foodBorder;
     ctx.fillStyle = foodColor;
     ctx.fillRect(foodX, foodY, unitSize, unitSize);
 };
