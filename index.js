@@ -35,6 +35,7 @@ function gameStart(){
     createFood();
     drawFood();
     nextTick();
+    snakeStop();
 };
 function nextTick(){
     if(running){
@@ -122,6 +123,12 @@ function changeDirection(event){
             break;
     }
 };
+
+function snakeStop(){
+    xVelocity = 0;
+    yVelocity = 0;
+};
+
 function checkGameOver(){
     switch(true){
         case (snake[0].x < 0):
