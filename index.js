@@ -146,12 +146,12 @@ function checkGameOver(){
 function displayGameOver(){
     ctx.fillStyle = "black";
     ctx.textAlign = "center";
-    ctx.fillText("You died...", gameWidth / 2, gameHeight / 2);
+    ctx.fillText("You died...", gameWidth, gameHeight);
     running = false;
 };
 function resetGame(){
     score = 0;
-    xVelocity = unitSize;
+    xVelocity = 0;
     yVelocity = 0;
     snake = [
         {x:unitSize * 4, y:0},

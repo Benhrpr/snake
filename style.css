@@ -9,7 +9,7 @@ title {
 }
 #gameBoard{
     border: 3px solid;
-    color: gray;
+    color: #808080;
 }
 #scoreText{
     font-size: 100px;
